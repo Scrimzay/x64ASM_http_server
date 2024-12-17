@@ -236,3 +236,13 @@ close_connection:
     mov rcx, [client_socket]
     call closesocket
     jmp request_loop
+
+
+; C program to find htons/big endian conversion
+;#include <stdio.h>
+;#include <arpa/inet.h>
+
+;int main() {
+    ;printf("Port 6969 in big endian: 0x%X\n", htons(6969));
+    ;return 0;
+;}
